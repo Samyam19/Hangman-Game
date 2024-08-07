@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <link rel="icon" type="images/png" href="images/fav.png">
+    <link rel="stylesheet" href="hang.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <title>Hangman</title>
+</head>
+
+<body>
+    <div class="modal">
+        <div class="content">
+            <img src="loser.webp">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>Rainbow</b></p>
+            <button class="replay">Play Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hangman-box">
+            <img src="images/hangman-0.svg">
+            <h1>HANGMAN GAME</h1>
+        </div>
+        <div class="game-box">
+            <ul class="word">
+            </ul>
+            <h4 class="hint">
+                <b>Hint:</b>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </h4>
+            <h4 class="guess">
+                Incorrect Guesses:
+                <p>0/6</p>
+            </h4>
+            <div class="keyboard">
+                
+            </div>
+        </div>
+    </div>
+    <div id="copyright-icon" >
+        <!-- <i class='bx bx-copyright info'></i> -->
+        <i class="fa-regular fa-copyright info" id="modal-toggle"></i>
+    </div>
+
+    <!-- Pop-up Message -->
+    <div id="popup-message" class="popup-message">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <p><strong>Disclaimer:</strong>
+            By using Hangman, players agree to indemnify and hold harmless Sciever Inc. from any liabilities, damages, or losses incurred while using the game.</p>
+            <p><strong>Credits:</strong>
+            Designed & Powered By <strong>Sciever Inc.</strong>
+            Developed By <strong>Samyam Bajracharya</strong></p>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/demo.js"></script>
+    <script type="module" src="scripts/word.js"></script>
+
+    
+   
+
+</body>
+
+</html>
